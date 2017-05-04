@@ -13,6 +13,6 @@ xy=np.genfromtxt(data_file_name,dtype='float32') #파일의 데이터를 불러 
 x_data = xy[: , 0] # 첫째 칼럼을 x_data로 저장
 y_data = xy[: , 1] # 둘째 칼럼을 y_data로 저장
 
-plt.plot(x_data, y_data, 'yo', alpha= 0.3 )
+plt.plot(x_data, y_data, 'bo', alpha= 0.1 )
 plt.show()
 
