@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 #그래프가 출력되지 않습니다.
-# Linear_regression1.py
+# linear_regression2.py
 
 import numpy as np
 import tensorflow as tf
