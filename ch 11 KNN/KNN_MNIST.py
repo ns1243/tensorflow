@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
-# 12장 교재용 KNN.py에서 변형되었습니다.
-# test를 전체 다 검증하는게 아니라 랜덤으로 선정해서
+# KNN_MNIST.py
+
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
