@@ -58,7 +58,7 @@ with tf.Session() as sess:
 import matplotlib.pyplot as plt
 plt.plot(x_data, y_data, 'ro', alpha= 0.01)
 
-x_sample =range(1, 21)
+x_sample =np.range(1, 21)
 y_sample = a_out * x_sample + b_out
 
 plt.plot(x_sample, y_sample, '*', label="x_sample")
