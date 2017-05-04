@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 # read_data1.py
-import numpy as np  #①
+import numpy as np  
 import matplotlib.pyplot as plt
 
 data_file_name= 'simple_linear.txt' # 데이터 파일 이름을 변수에 입력한다.
