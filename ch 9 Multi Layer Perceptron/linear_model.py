@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 그래프가 출력되지 않습니다.
+# 
 # linear_model.py
 
 import numpy as np
@@ -57,7 +57,7 @@ import matplotlib.pyplot as plt
 
 plt.plot(x_data, y_data, 'ro', alpha=0.05)
 
-x_sample = range(1, 21)
+x_sample = np.arange(1, 21)
 y_sample = a_out * x_sample + b_out
 
 plt.plot(x_sample, y_sample, '*', label="x_sample")
