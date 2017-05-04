@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-#10장 교재 입니다.
+#MLP_multi.py
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
