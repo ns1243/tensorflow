@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-# Linear Regression1에서 그래프를 추가한 버전임.
+# read_data2.py
 
 import numpy as np
 import tensorflow as tf
