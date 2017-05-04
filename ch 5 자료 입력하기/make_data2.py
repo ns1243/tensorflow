@@ -14,7 +14,7 @@ mean, std = 20, 3 # mean and standard deviation
 temp_x = np.random.normal(mean, std, n_count)
 temp_b = np.random.normal(0,3, n_count)
 
-# 자료 만드는 과정 반복
+# 반   
 for i, x  in enumerate(temp_x):
     y = a*x + b + temp_b[i]
     new_row = [x,y]
