@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
-#그래프가 출력되지 않습니다.
-# Linear_regression3.py
+#그래프가 출력
+# linear_regression4.py
 
 import numpy as np
 import tensorflow as tf
@@ -55,7 +55,7 @@ with tf.Session() as sess:
 import matplotlib.pyplot as plt
 plt.plot(x_data, y_data, 'ro', alpha= 0.1)
 
-x_sample =range(5, 32)
+x_sample =np.arange(5, 32)
 y_sample = a_out * x_sample + b_out
 
 plt.plot(x_sample, y_sample, '*', label="x_sample")
