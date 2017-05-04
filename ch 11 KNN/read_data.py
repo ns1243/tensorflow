@@ -1,4 +1,5 @@
 #-*- coding: utf-8 -*-
+#read_data.py
 import numpy as np
 #read training sets
 data_file_string= 'label_dots.txt'
