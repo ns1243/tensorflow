@@ -6,7 +6,7 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 
 
-data_file_name= 'random_linear.txt' # 데이터 파일 이름을 변수에 입력한다.
+data_file_name= 'linear_random.txt' # 데이터 파일 이름을 변수에 입력한다.
 #data_file_name= 'x_square.txt'
 xy=np.genfromtxt(data_file_name,dtype='float32') #파일의 데이터를 불러 들인다.
 
