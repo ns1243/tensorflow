@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-#ch 9
+#MLP.py
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
