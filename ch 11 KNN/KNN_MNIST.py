@@ -37,7 +37,7 @@ tf_sub = tf.sub(reshape_x_train,x_test)
 distances_array =  tf.sqrt(tf.reduce_sum(tf.square(tf_sub),2))
 assignments = tf.arg_min(distances_array,1)
 
-
+# ========================================================  2부
 sess = tf.Session()
 init_op = tf.global_variables_initializer()
 sess.run(init_op)
