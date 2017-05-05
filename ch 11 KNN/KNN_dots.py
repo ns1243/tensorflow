@@ -16,10 +16,6 @@ count = len(xy2)
 indices = list(range(count))
 shuffle(indices)
 
-
-
-#shuffle(xy)
-
 # x값과 y값을 불러 온다.
 x_data = xy[: , 0:2] # 첫째 둘째 칼럼을 x_data로 저장
 y_data = xy[: , 2:5]
