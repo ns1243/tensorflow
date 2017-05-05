@@ -1,6 +1,5 @@
 #-*- coding: utf-8 -*-
-# 12장 교재용 KNN.py에서 변형되었습니다.
-# test를 전체 다 검증하는게 아니라 랜덤으로 선정해서
+# KNN_dots.py
 import numpy as np
 import tensorflow as tf
 from random import shuffle
@@ -30,7 +29,7 @@ y_data2 = xy2[:, 2:5]
 
 x_train = tf.constant(x_data)
 y_train = tf.constant(y_data)
-# y_points = tf.constant(y_data)
+
 x_test = tf.placeholder(tf.float32,[2])
 reshape_x_train = tf.reshape(x_train,[1,-1,2])
 reshape_x_test = tf.reshape(x_test, [1,-1,2])
