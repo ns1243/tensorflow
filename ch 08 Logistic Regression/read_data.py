@@ -13,7 +13,7 @@ train_x_data_all = mnist.train.images
 train_y_data_all = mnist.train.labels
 
 # 자료 구조 확인하기 
-print ("train_x_data shape is ", np.shape(train_x_data_all), ", train_y_data_all", np.shape(train_y_data_all))
+print ("train_x_data shape is ", np.shape(train_x_data_all), ", train_y_data shape is", np.shape(train_y_data_all))
 
 # 자료 변형하기 
 temp_x = np.reshape(train_x_data_all, (55000, 28, 28))
