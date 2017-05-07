@@ -33,7 +33,7 @@ print(y2_out)
 #예제 3
 import tensorflow as tf
 a = tf.constant([ [1 , 2], [3 , 4] ])
-b = tf.constant([ [1 , 2], [3 , 4] ])
+b = tf.constant([ [1 , 1], [1 , 1] ])
 y = tf.div(a , b)
 
 sess = tf.Session()
