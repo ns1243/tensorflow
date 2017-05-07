@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-#그래프가 출력되지 않습니다.
+#no graph
 # linear_regression3.py
 
 import numpy as np
