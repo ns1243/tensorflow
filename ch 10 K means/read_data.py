@@ -9,7 +9,7 @@ from random import choice, shuffle
 
 
 
-data_file_name= 'k_means_data.txt' # 데이터 파일 이름을 변수에 입력한다.
+data_file_name= 'label_dots.txt' # 데이터 파일 이름을 변수에 입력한다.
 xy=np.genfromtxt(data_file_name,dtype='float32') #파일의 데이터를 불러 들인다.
 
 #shuffle(xy)
