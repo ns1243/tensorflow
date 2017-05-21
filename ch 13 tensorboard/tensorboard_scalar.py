@@ -38,8 +38,8 @@ opt = tf.train.GradientDescentOptimizer(0.001)
 # session에 이용한 train 정의
 do_train = opt.minimize(cost)
 init = tf.global_variables_initializer()
-writer = tf.summary.FileWriter('./scalar', graph=tf.get_default_graph())
-summary_op = tf.merge_all_summaries()
+tf_writer = tf.summary.FileWriter('./scalar', graph=tf.get_default_graph()) # 추가
+summary_op = tf.merge_all_summaries() # 추가
 with tf.Session() as sess:
     sess.run(init)
     for i in range(0, 5000):
@@ -48,9 +48,9 @@ with tf.Session() as sess:
             cost_out = sess.run(cost, feed_dict={X: x_data, Y: y_data})
             a_out = sess.run(a, feed_dict={X: x_data, Y: y_data})
             b_out = sess.run(b, feed_dict={X: x_data, Y: y_data})
-            summary = sess.run(summary_op, feed_dict={X: x_data, Y: y_data})
-            writer.add_summary(summary, i)
+            summary = sess.run(summary_op, feed_dict={X: x_data, Y: y_data}) # 추가
+            tf_writer.add_summary(summary, i) #추가
             print(i, "session is performed.. cost is ", cost_out, ", a is ", a_out, ", b is ", b_out)
 
-writer.close()
+tf_writer.close() #추가
 
