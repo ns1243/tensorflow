@@ -58,6 +58,7 @@ with tf.Session() as sess:
   sess.run(init)
   for i in range(5000):
     sess.run(do_train,feed_dict={x: x_data, y: y_data})
+    # 추가되는 부분
     if (i % 1000 == 0):
       summary = sess.run(summary_op, feed_dict={x: x_data, y: y_data})
       writer.add_summary(summary, i)
@@ -69,5 +70,5 @@ with tf.Session() as sess:
 plt.plot(x_data,y_data,'ro', x_test,y_test,'bo',alpha=0.3)
 plt.show()
 
-
+# 맨 마지막에 추가    
 writer.close()
