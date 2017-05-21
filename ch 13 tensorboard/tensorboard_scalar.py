@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# 기존 그래프가 출력되지 않습니다.
+# tensorboard_scalar.py
 
 import numpy as np
 import tensorflow as tf
