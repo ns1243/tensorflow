@@ -12,7 +12,7 @@ xy = np.genfromtxt(data_file_name, dtype='float32')
 temp_x =  xy[:, 0]  # 첫째 칼럼을 x_temp로 저장
 temp_y =  xy[:, 1]  # 둘째 칼럼을 y_temp로 저장
 
-# reshape
+# reshape data
 x_data = np.reshape(temp_x, [1,-1])
 y_data = np.reshape(temp_y, [1,-1])
 
