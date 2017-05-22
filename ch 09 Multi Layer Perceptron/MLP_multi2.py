@@ -25,15 +25,18 @@ number_of_hidden = 1
 number_of_out = 1
 
 
+# setup hidden layer1
 a_hidden = tf.Variable(tf.random_normal([number_of_hidden, 1]))
 b_hidden = tf.Variable(tf.random_normal([number_of_hidden, 1]))
 hidden_layer1 = tf.nn.sigmoid(tf.matmul(a_hidden, x ) + b_hidden)
 
 
+# setup hidden layer2
 a_middle = tf.Variable(tf.random_normal([number_of_out, number_of_hidden ]))
 b_middle = tf.Variable(tf.random_normal([number_of_out,1]))
 hidden_layer2 = tf.nn.sigmoid(tf.matmul(a_middle,hidden_layer1) + b_middle)
 
+# setup output layer
 a_out = tf.Variable(tf.random_normal([1,number_of_out]))
 b_out = tf.Variable(tf.random_normal([1,1]))
 y_out = tf.matmul(a_out,hidden_layer2) + b_out
